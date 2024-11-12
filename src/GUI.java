@@ -16,6 +16,8 @@ public class GUI {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
+        frame.setLocationRelativeTo(null);
+
         JPanel painelProcura = new JPanel(new FlowLayout(FlowLayout.LEFT));
 
         JLabel p = new JLabel("Texto a procurar:");

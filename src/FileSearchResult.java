@@ -14,6 +14,4 @@ public class FileSearchResult {
         this.addrNo=addrNo;
         this.portaNo=portaNo;
     }
-
-
 }
