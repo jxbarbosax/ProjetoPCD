@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class WordSearchMessage {
     private String palavraChave;
-    private JList<String> lista;
+    private JList<FileSearchResult> lista;
 
     public WordSearchMessage(String palavraChave){
         this.palavraChave = palavraChave;
@@ -12,13 +12,12 @@ public class WordSearchMessage {
         return palavraChave;
     }
 
-    public JList<String> ficheirosComPalavraChave(String palavraChave) {
-        DefaultListModel<String> resultado = new DefaultListModel<>();
+    public JList<FileSearchResult> listarFicheiros(String palavraChave) {
+        DefaultListModel<FileSearchResult> resultado = new DefaultListModel<>();
         for (int i = 0; i < lista.getModel().getSize(); i++) {
-            String ficheiro = lista.getModel().getElementAt(i);
-            if (ficheiro.contains(palavraChave)) {
+            FileSearchResult ficheiro = lista.getModel().getElementAt(i);
+            if(ficheiro.getNomeFicheiro() == palavraChave)
                 resultado.addElement(ficheiro);
-            }
         }
         return new JList<>(resultado);
     }
