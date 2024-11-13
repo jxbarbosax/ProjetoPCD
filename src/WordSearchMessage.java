@@ -11,4 +11,15 @@ public class WordSearchMessage {
     public String getPalavraChave() {
         return palavraChave;
     }
+
+    public JList<String> ficheirosComPalavraChave(String palavraChave) {
+        DefaultListModel<String> resultado = new DefaultListModel<>();
+        for (int i = 0; i < lista.getModel().getSize(); i++) {
+            String ficheiro = lista.getModel().getElementAt(i);
+            if (ficheiro.contains(palavraChave)) {
+                resultado.addElement(ficheiro);
+            }
+        }
+        return new JList<>(resultado);
+    }
 }
