@@ -11,11 +11,11 @@ public class Server {
     public void start() {
         try {
             while (true) { // Permite aceitar múltiplas conexões
-                System.out.println("Aguardando conexão do cliente...");
+                System.out.println("Aguarda conexão do cliente...");
                 Socket socket = serverSocket.accept();
                 System.out.println("Cliente conectado!");
 
-                // Cria uma nova thread para gerenciar cada conexão de cliente
+                // Cria uma nova thread para cada conexão de cliente
                 new ClientHandler(socket).start();
             }
         } catch (IOException e) {

@@ -13,12 +13,6 @@ public class Client {
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             System.out.println("Conectado ao servidor!");
 
-            // Enviar uma mensagem ao servidor
-            sendMessage("Olá, servidor!");
-
-            // Ler resposta do servidor
-            String response = in.readLine();
-            System.out.println("Resposta do servidor: " + response);
 
         } catch (IOException e) {
             e.printStackTrace();

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09c988ff-ec69-428f-a492-f7d41a6cf830" name="Changes" comment="hellu 3">
+    <list default="true" id="09c988ff-ec69-428f-a492-f7d41a6cf830" name="Changes" comment="hellu 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731514244589</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hellu 4">
+      <option name="closed" value="true" />
+      <created>1731516205918</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731516205918</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,7 +121,8 @@
     <MESSAGE value="hellu" />
     <MESSAGE value="hellu 2" />
     <MESSAGE value="hellu 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="hellu 3" />
+    <MESSAGE value="hellu 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="hellu 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
