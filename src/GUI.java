@@ -2,15 +2,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.Socket;
 
 public class GUI {
     //Atributos
     private JFrame frame;
     private JList<String> lista;
     private JTextField campoPesquisa;
+    private Socket node;
 
     //Construtor
-    public GUI() {
+    public GUI(Socket no) {
+        this.node = no;
+
         frame = new JFrame("Projeto PCD");
         frame.setSize(500,300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
